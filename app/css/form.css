@@ -1,0 +1,2 @@
+form .firstName, form .lastName, form .email, form .phoneNumber, form .password, form .message {
+  display: none; }

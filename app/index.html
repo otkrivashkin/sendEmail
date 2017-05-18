@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/print.css">
+    <link rel="stylesheet" href="css/form.css">
+    <!--endbuild-->
+</head>
+<body>
+
+<div class="wrapper">
+    <header>
+        <div class="green-line">
+            <div class="container cleaner">
+                <div class="left">
+                    <p>Подключайся и играй на наших серверах!</p>
+                </div>
+                <div class="right">
+                    <ul class="social">
+                        <li><a href="#" class="sk">Skype</a></li>
+                        <li><a href="#" class="fb">Facebook</a></li>
+                        <li><a href="#" class="gp">Google-plus</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container down cleaner">
+            <div class="logo left">
+                <img src="images/logo_mc.png" alt="#">
+            </div>
+            <span class="big-image right">
+                        <img src="images/title_mc.png" alt="title">
+                    </span>
+            <div class="info">
+                <div class="top">
+                    <p>Админ:<a href="#">+38(068) 333-22-10</a>
+                        <a href="#">+38(068) 333-22-10</a>
+                    </p>
+                </div>
+                <div class="middle">
+                    <p>
+                        По донату:<a href="#">067-33-22-180</a>
+                    </p>
+                </div>
+                <div class="bottom">
+                    <p>
+                        Скайп:
+                        <a href="#"><img src="images/skype.png" alt="skype"><i>minecraft-km7</i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="btn">
+                <button>Выбрать сервер</button>
+                <button>Случайный</button>
+            </div>
+        </div>
+    </header>
+    <nav class="green-line menu">
+        <menu class="container cleaner">
+            <ul>
+                <li class="left"><a href="#">Главная</a></li>
+                <li class="left"><a href="#">Об игре</a></li>
+                <li class="left"><a href="#">Список серверов</a></li>
+                <li class="left"><a href="#">Наша команда</a></li>
+                <li class="left"><a href="#">Донат</a></li>
+            </ul>
+        </menu>
+    </nav>
+
+    <main class="container cleaner middle-info">
+        <aside class="left">
+            <h2>Мир Minecraft</h2>
+            <menu class="red-list cleaner">
+                <ul>
+                    <li>
+                        <a href="#">- Блоки</a>
+                    </li>
+                    <li><a href="#">- Мобы</a></li>
+                    <li><a href="#">- Структуры</a></li>
+                    <li><a href="#">- Биомы</a></li>
+                    <li><a href="#">- Миры</a></li>
+                </ul>
+            </menu>
+            <menu class="black-list cleaner">
+                <ul>
+                    <li><a href="#">Industrial craft</a></li>
+                    <li><a href="#">OptiFine</a></li>
+                    <li><a href="#">Forge</a></li>
+                    <li><a href="#">TooManyItems</a></li>
+                    <li><a href="#">RailCraft</a></li>
+                </ul>
+            </menu>
+        </aside>
+
+
+        <!--FORM START-->
+
+        <form id="myForm" method="post" name="registration">
+            <label>First Name: <input name="firstName" id="firstName" type="text" required/></label><br/>
+            <div class="firstName"></div>
+            <label>Last Name: <input name="lastName" id="lastName" type="text" required/></label><br/>
+            <div><p class="lastName">Хде фамилия ?*:)</p></div>
+            <label>Email: <input name="email" id="email" type="email" required/></label><br/>
+            <div><p class="email">Пошту не виджу...</p></div>
+            <label>Phone Number: <input name="phoneNumber" id="phoneNumber" type="tel" required/></label><br/>
+            <div><p class="phoneNumber">А если я хочу позвонить тебе(...</p></div>
+            <label>Password: <input name="password" id="password" type="password" required/></label><br/>
+            <div><p class="password">Склерос да?*)</p></div>
+            <label>Message<textarea name="message" id="message" required></textarea></label><br/>
+            <div><p class="message">Ну пару слов про себя напиши</p></div>
+            <input type="button" id="submitFormData" onclick="SubmitFormData();" value="Submit"/>
+        </form>
+        <br/>
+        <div id="success">
+            <p>Your email was send successfully</p>
+        </div>
+        <div id="failure">
+            <p>There was an error with your email...</p>
+        </div>
+
+        <!--FORM END-->
+
+
+        <section>
+            <h2>Подключайся и играй на наших серверах!</h2>
+            <article class="the-biggest-content">
+                <img src="images/big_image_1.png" alt="big_image">
+                <p>
+                    Minecraft — компьютерная игра в стиле песочницы с открытым миром, в которой перед игроком не ставятся какие-либо определенные цели — игроки сами выбирают, что им делать в игре. Несмотря на это, игра содержит систему достижений — поощрительных наград за выполнение определенных действий.
+                </p>
+            </article>
+            <hr/>
+        </section>
+        <section class="cleaner small-content">
+            <figure class="element first left">
+                <figcaption class="text">
+                    <b>2016-08-04</b>
+                    <p>Страж подводной крепости довольно сильный противник для начинащего ирока</p>
+                </figcaption>
+            </figure>
+            <figure class="element second left">
+                <figcaption class="text">
+                    <b>2016-06-27</b>
+                    <p>Встречайте: белые медведи в холодных биомах!</p>
+                </figcaption>
+            </figure>
+            <figure class="element third left">
+                <figcaption class="text">
+                    <b>2016-04-17</b>
+                    <p>В мобильной версии теперь можно приручить кролика, он станет верным другом</p>
+                </figcaption>
+            </figure>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-up">
+            <div class="container cleaner">
+                <div class="left">
+                    <p>Подключайся и играй на наших серверах!</p>
+                </div>
+                <div class="info right">
+                    <div class="top">
+                        <p>Админ:<a href="#">+38(068) 333-22-10</a>
+                            <a href="#">+38(068) 333-22-10</a>
+                        </p>
+                    </div>
+                    <div class="middle">
+                        <p>
+                            По донату:<a href="#">067-33-22-180</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="container cleaner">
+                <span class="left"><img src="images/small_image_1.png" alt="small_image"></span>
+                <span class="left"><img src="images/small_image_2.png" alt="small_image"></span>
+                <span class="left"><img src="images/small_image_3.png" alt="small_image"></span>
+                <span class="left"><img src="images/small_image_4.png" alt="small_image"></span>
+            </div>
+        </div>
+        <div class="footer-down">
+            <div class="container">
+                <p>© Poshtar Boba, 2016</p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+<!--build:js js/main.min.js -->
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/form.js"></script>
+<script src="js/font-family.js"></script>
+<!-- endbuild -->
+</body>
+
+</html>
